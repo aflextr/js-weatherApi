@@ -28,6 +28,7 @@ yer.addEventListener("keyup", (ev)=>{
 })
 
 form.addEventListener("submit",async (ev)=>{
+    sonuclar.innerHTML = "";
     ev.preventDefault();
 
     await LokasyonArat(yer.value);
